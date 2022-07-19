@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Elaborar un programa que ingrese 3 números y muestre el número intermedio.
+        var a = new Number();
+        var b = new Number();
+        var c = new Number();
+        var d = new Number();
+        var e = new Number();
+        a = Number(prompt("Ingrese el primer numero"));
+        b = Number(prompt("Ingrese el segundo número"));
+        c = Number(prompt("Ingrese el tercer número"));
+        d = Number(prompt("Ingrese el tercer número"));
+        e = Number(prompt("Ingrese el tercer número"));
+        if (a != b && a != c && a != d && a != e && b != c && b != d && b != e && c != d && c != e && d != e) {
+
+            if (a > b && a < c && a > d && a < e || a > e && a < d && a > c && a < b) {
+                document.write("1. El numero intermedio es : ", a, '<BR/>');
+            } else if(b > a && b < c && b > d && b < e || b < a && b > c && b < d && b > e) {
+                    document.write("2. El número intermedio es : ", b, '<BR/>');
+                } 
+                 else if (c > a && c < b && c > d && c < e || c < a && c > b && c < d && c > e) {
+                    document.write("3. El número intermedio es: ", c, '<BR/>');
+
+                } 
+
+                 else if (d > a && d < b && d > c && d < e || d < a && d > b && d < c && d > e) {
+                    document.write("4. El número intermedio es: ", d, '<BR/>');
+
+                } 
+
+                 else if (e > a && e < b && e > c && e < d || e < a && e > b && e < c && e > d) {
+                    document.write("5. El número intermedio es: ", e, '<BR/>');
+
+                } else {
+                    document.write("Los números no son diferentes", '<BR/>');
+                }
+            }
+    </script>
+</body>
+
+</html>

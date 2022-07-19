@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>    PRUEBA DE RECUPERACION</h1>
+    <h2>Se le pide al estudiante que inggrese 5 notas y se realice el promedio de estas. Se solicita impriir en pantalla el nombre del estudiante con el promedio de las notas e indique si aprobó o no aprobó la asignatura de Fundamentos de Programación.</h2>
+    <script>
+        
+        var suma=0;
+        let nombre=prompt("Ingrese su nombre")
+        var promedio = 0
+       function promedioNotas(categoriaA,CategoriaB,categoriaC){
+        for (i = 1; i <= 2; i++){
+        let nota=parseInt(prompt("Ingrese 2 notas"))
+            suma=suma+nota;
+            promedio=(suma)/2
+        }
+        if (promedio >= 5.5 && promedio <= 6.9 ){
+            document.write( " su promedio  es: " + promedio + " Usted se queda en suspenso en categoria B" )
+        }else if(promedio >=7){
+            document.write("Señor "+nombre+" su promedio  es: "+promedio+" felicidades usted aprueba la asignatura en categoria A")
+
+        }else if(promedio <5.5){
+            document.write(" su promedio  es: " + promedio + " Usted reprueba la asignatura en categoria C ")
+        }
+    }
+    promedioNotas();
+    </script>
+</body>
+</html>

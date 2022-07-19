@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Almacen San Francisco</h2>
+                <p>Registro Horario de Salida</p>
+                <button class="sign-up-btn">HORARIO SALIDA</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Horario de Entrada</h2>
+            <p class="cuenta-gratis">Alamcen San Francisco</p>
+            <input type="time" id="time_entrada" placeholder="Hora" required>
+            <input type="date" id="date_entrada" placeholder="Fecha" required>
+            
+            <input type="button" value="Registrar" onclick="getHoraFechaEntrada();">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            
+
+            <h2 class="create-account">Horario de Salida</h2>
+            <p class="cuenta-gratis">Almacen San Francisco</p>
+            <input type="time" id="time_salida" placeholder="Hora" required>
+            <input type="date" id="date_salida" placeholder="Fecha" required>
+            <input type="button" id="btn_registrarse" value="Registrar" onclick="getHoraFechaSalida();">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido Almacen San Francisco</h2>
+                <p>Almacen San Francisco</p>
+                <button class="sign-in-btn">volver</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/entrada_salida.js"></script>
+</body>
+
+</html>

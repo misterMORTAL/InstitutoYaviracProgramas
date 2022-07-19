@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>San Francisco</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/273ee32211.js" crossorigin="anonymous"></script>
+    <header class="hero">
+        <div class="container">
+            <nav class="nav">
+                <a href="inicio.html" class="nav__items nav__items nav__items--cta">Inicio</a>
+                <a href="quienes_somos.html" class="nav__items">Quienes Somos</a>
+                <a href="contactanos1.html" class="nav__items">Contactanos</a>
+                <a href="usuarios.html" class="nav__items">Login</a>
+            </nav>
+
+            <section class="hero__container">
+                <div class="hero__texts">
+                    <h1 class="hero__title">ALMACÉN SAN FRANCISCO</h1>
+                    <h4 class="hero__subtitle">Más cerca de ti</h4>
+                    <a href="contactanos1.html" class="hero__cta">Contactame ahora</a>
+
+                </div>
+            </section>
+        </div>
+        <div class="hero__wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="presentation container">
+
+            <h2 class="subtitle">SAN FRANCISCO</h2>
+            <img src="img/fondor.jpeg" class="presentation__picture">
+            <p class="presentation__copy">Bienvenidos al Sistema automático
+                conoce todo lo que puedes hacer con tan solo un click. </p>
+            <a href="contactanos1.html" class="presentation__cta">Contactame Ahora</a>
+        </section>
+
+
+
+
+    </main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2 class="subtitle">GOOGLE MAPS</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.206903790951!2d-78.50583326637391!3d-0.2194115407244458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5998af85031d9%3A0x78c592f4d6423b6c!2sCafe%20Mosaico!5e0!3m2!1ses!2sec!4v1645424859831!5m2!1ses!2sec"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <h2 class="subtitle">FORMULARIO</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="get" action="">
+                            <div class="form-group">
+                                <label for="Nombres" >Nombres:</label>
+                                <input type="text" name="Nombres" id="Nombres" class="form-control"
+                                    placeholder="Ingrese sus nombres" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="Apellidos">Apellidos:</label>
+                                <input type="text" name="Apellidos" id="Apellidos" class="form-control"
+                                    placeholder="Ingrese sus apellidos" aria-describedby="helpId">
+
+                                <div class="form-group">
+                                    <label for="celular">Celular:</label>
+                                    <input type="number" name="celular" id="celular" class="form-control"
+                                        aria-describedby="helpId" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo">Correo electronico:</label>
+                                    <input type="email" name="correo" id="correo"
+                                        placeholder="AlmacenSanFrancisco@gmail.com.ec" class="form-control"
+                                        aria-describedby="helpId">
+                                </div>
+                        </form>
+                        <div>
+                            <input type="submit" value="Enviar Datos" onclick="datos()">
+                        </div>
+                        <script src="js/contactos.js"></script>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <nav class="nav nav--footer">
+                <a class="nav__items nav__items--footer" href="inicio.html">Inicio</a>
+                <a class="nav__items nav__items--footer" href="quienes_somos.html">Quienes somos</a>
+                <a class="nav__items nav__items--footer" href="contactanos1.html">Contáctanos</a>
+                <a class="nav__items nav__items--footer href=" href="usuarios.html" ">Login</a>
+            </nav>
+
+            <section class=" footer__contact">
+                    <h3 class="footer__title">Contáctanos</h3>
+                    <div class="footer__icons">
+
+                        <span class="footer__container-icons">
+                            <a class="fab fa-twitter footer__icons" href="#"></a>
+                        </span>
+
+                        <span class="footer__container-icons">
+                            <a class="fab fa-facebook footer__icons" href="#"></a>
+                        </span>
+
+                        <span class="footer__container-icons">
+                            <a class="fab fa-whatsapp footer__icons" href="#"></a>
+                        </span>
+
+                    </div>
+                    </section>
+        </div>
+
+        <center style="color: #fff;">AlmacenSanFrancisco@gmail.com.ec<br> Quito-Ecuador<br>Derechos reservados 2022
+        </center>
+    </footer>
+</body>
+
+</html>
